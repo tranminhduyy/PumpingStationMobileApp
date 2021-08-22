@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClient.Page_General"
+             BackgroundColor="#242526">
+    <ContentPage.Content>
+        <ScrollView HeightRequest="3000">
+            <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand" WidthRequest="3000">
+                <StackLayout>
+                    <Frame Padding="4" Margin="10,10,10,10" HasShadow="True" BackgroundColor="#6963CF" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                            <ImageButton Source="back.png" Clicked="btBack_Clicked" BackgroundColor="Transparent"/>
+                            <Label Text="Pump General" TextColor="White" FontAttributes="Bold" FontSize="24" HorizontalTextAlignment="Start"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Padding="10,6,10,6" Margin="10,0,10,5" HasShadow="True" BackgroundColor="#3E4042" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                            <Label Text="Mode toàn cục" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                            <Picker x:Name="piGlobalMode" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" FontSize="15" WidthRequest="100" HeightRequest="50">
+                                <Picker.Items>
+                                    <x:String>Manual</x:String>
+                                    <x:String>Auto</x:String>
+                                    <x:String>Semi-Auto</x:String>
+                                    <x:String>Service</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </StackLayout>
+                    </Frame>
+
+
+
+                    <Frame Padding="10,6,10,6" Margin="10,0,10,5" HasShadow="True" BackgroundColor="#3E4042" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                            
+                            <StackLayout Margin="0,0,0,0" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Nhiệt độ tủ điều khiển" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                    <Frame Padding="2" HasShadow="True" WidthRequest="70" HorizontalOptions="Start" BackgroundColor="#6963CF">
+                                        <Label x:Name="tbTemperature" Text="0" TextColor="White" FontSize="15" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                                    </Frame>
+                                    <Label Text="oC" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Độ ẩm tủ điều khiển" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                    <Frame Padding="2" HasShadow="True" WidthRequest="70" HorizontalOptions="Start" BackgroundColor="#6963CF">
+                                        <Label x:Name="tbHumidity" Text="0" TextColor="White" FontSize="15" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                                    </Frame>
+                                    <Label Text="%RH" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                                
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+
+
+                    <Frame Padding="10,6,10,6" Margin="10,0,10,5" HasShadow="True" BackgroundColor="#3E4042" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Mực nước bể hút" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                    <Frame Padding="2" HasShadow="True" WidthRequest="70" HorizontalOptions="Start" BackgroundColor="#6963CF">
+                                        <Label x:Name="tbLevelInSuctionTank" Text="0" TextColor="White" FontSize="15" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                                    </Frame>
+                                    <Label Text="m" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Báo cạn bể hút" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                    <Image x:Name="imgEmptySuctionTank" Source="ledoff.png" HeightRequest="23" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                            
+                        
+                    </Frame>
+
+                    <Frame Padding="10,6,10,6" Margin="10,0,10,5" HasShadow="True" BackgroundColor="#3E4042" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Mực nước thượng lưu trong khoảng bật bơm" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                    <Entry x:Name="tbAbove_Level" Text="0" TextColor="White" WidthRequest="70" FontSize="15" HorizontalTextAlignment="Center" />
+
+                                    <Label Text="m" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Mực nước hạ lưu trong khoảng bật bơm" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                    <Entry x:Name="tbBottom_Level" Text="0" TextColor="White" WidthRequest="70" FontSize="15" HorizontalTextAlignment="Center" />
+                                    
+                                    <Label Text="m" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                                
+                                
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Padding="10,6,10,6" Margin="10,0,10,5" HasShadow="True" BackgroundColor="#3E4042" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                            
+                            <StackLayout Margin="0,0,0,0" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Thời gian cào rác chạy ổn định" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                    <Entry x:Name="tbPumpRunDelay" Text="0" TextColor="White" WidthRequest="70" FontSize="15" HorizontalTextAlignment="Center" />
+
+                                    <Label Text="s" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Thời gian băng tải cuốn hết rác trước khi dừng" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                    <Entry x:Name="tbConveyerStopDelay" Text="0" TextColor="White" WidthRequest="70" FontSize="15" HorizontalTextAlignment="Center" />
+
+                                    <Label Text="s" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Thời gian cho phép thêm bơm" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                    <Entry  x:Name="tbTimeLimit" Text="0" TextColor="White" WidthRequest="70" FontSize="15" HorizontalTextAlignment="Center"/>
+                                    
+                                    <Label Text="s" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Thời gian luân phiên máy bơm" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                    <Entry  x:Name="tbMasterChangeFrequency" Text="0" TextColor="White" WidthRequest="70" FontSize="15" HorizontalTextAlignment="Center" />
+                                    
+                                    <Label Text="s" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Thời gian băng tải chạy ổn định" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                    <Entry  x:Name="tbRakerRunDelay" Text="0" TextColor="White" WidthRequest="70" FontSize="15" HorizontalTextAlignment="Center"/>
+                                    
+                                    <Label Text="s" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                    <Label Text="Thời gian bơm dừng ổn định" TextColor="White" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                    <Entry x:Name="tbRakerStopDelay" Text="0" TextColor="White" WidthRequest="70" FontSize="15" HorizontalTextAlignment="Center" />
+                                    
+                                    <Label Text="s" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+                    
+                </StackLayout>
+            </ScrollView>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

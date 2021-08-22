@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="XamarinClient.Scada"
+             BackgroundColor="#242526">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame Margin="25" HeightRequest="450" WidthRequest="300" BackgroundColor="#3E4042">
+                    
+                    <RelativeLayout>
+                        <Label Text="Mực nước bể hút (m)" TextColor="White" FontSize="15" FontAttributes="Bold"/>
+                       
+                        <Image Source="tank.png"
+                               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+                        <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                              RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                           
+                            <chart:ChartView x:Name="LevelInSuctionTank_Chart" HeightRequest="100" WidthRequest="300"
+                                             Margin="53,50,53,29"/>
+                            <Label x:Name="tbLevelInSuctionTank" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="35" FontAttributes="Bold"/>
+                        </Grid>
+                        
+                    </RelativeLayout>
+                </Frame>
+
+                <Frame Margin="25,0,25,25" HeightRequest="600" WidthRequest="300" BackgroundColor="#3E4042">
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Orientation="Horizontal">
+                            <Image Source="pump.png"
+                               x:Name="imgPump_1"
+                               HeightRequest="110"
+                               WidthRequest="100"/>
+                            <Frame Margin="0" HeightRequest="115" WidthRequest="150" BackgroundColor="#55585B" CornerRadius="25">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="Bơm #1" TextColor="White"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Trạng thái:" TextColor="White"/>
+                                        <Label x:Name="tbPump_1_RunFeedback" Text="OFF" TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Mã lỗi:" TextColor="White"/>
+                                        <Label x:Name="tbPump_1_FaultID" Text="0"  TextColor="White"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Orientation="Horizontal">
+                            <Image Source="pump.png"
+                               x:Name="imgPump_2"
+                               HeightRequest="110"
+                               WidthRequest="100"/>
+                            <Frame Margin="0" HeightRequest="115" WidthRequest="150" BackgroundColor="#55585B" CornerRadius="25">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="Bơm #2" TextColor="White"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Trạng thái:" TextColor="White"/>
+                                        <Label x:Name="tbPump_2_RunFeedback" Text="OFF" TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Mã lỗi:" TextColor="White"/>
+                                        <Label x:Name="tbPump_2_FaultID" Text="0"  TextColor="White"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Orientation="Horizontal">
+                            <Image Source="pump.png"
+                               x:Name="imgPump_3"
+                               HeightRequest="110"
+                               WidthRequest="100"/>
+                            <Frame Margin="0" HeightRequest="115" WidthRequest="150" BackgroundColor="#55585B" CornerRadius="25">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="Bơm #3" TextColor="White"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Trạng thái:" TextColor="White"/>
+                                        <Label x:Name="tbPump_3_RunFeedback" Text="OFF" TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Mã lỗi:" TextColor="White"/>
+                                        <Label x:Name="tbPump_3_FaultID" Text="0"  TextColor="White"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Orientation="Horizontal">
+                            <Image Source="pump.png"
+                               x:Name="imgPump_4"
+                               HeightRequest="110"
+                               WidthRequest="100"/>
+                            <Frame Margin="0" HeightRequest="115" WidthRequest="150" BackgroundColor="#55585B" CornerRadius="25">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="Bơm #4" TextColor="White"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Trạng thái:" TextColor="White"/>
+                                        <Label x:Name="tbPump_4_RunFeedback" Text="OFF" TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Mã lỗi:" TextColor="White"/>
+                                        <Label x:Name="tbPump_4_FaultID" Text="0"  TextColor="White"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="25,0,25,25" HeightRequest="600" WidthRequest="300" BackgroundColor="#3E4042">
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Orientation="Horizontal">
+                            <Image Source="raker.png"
+                               x:Name="imgRaker_1"
+                               HeightRequest="110"
+                               WidthRequest="100"/>
+                            <Frame Margin="0" HeightRequest="115" WidthRequest="150" BackgroundColor="#55585B" CornerRadius="25">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="Cào rác #1" TextColor="White"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Trạng thái:" TextColor="White"/>
+                                        <Label x:Name="tbRaker_1_RunFeedback" Text="OFF" TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Mã lỗi:" TextColor="White"/>
+                                        <Label x:Name="tbRaker_1_FaultID" Text="0"  TextColor="White"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Orientation="Horizontal">
+                            <Image Source="raker.png"
+                               x:Name="imgRaker_2"
+                               HeightRequest="110"
+                               WidthRequest="100"/>
+                            <Frame Margin="0" HeightRequest="115" WidthRequest="150" BackgroundColor="#55585B" CornerRadius="25">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="Cào rác #2" TextColor="White"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Trạng thái:" TextColor="White"/>
+                                        <Label x:Name="tbRaker_2_RunFeedback" Text="OFF" TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Mã lỗi:" TextColor="White"/>
+                                        <Label x:Name="tbRaker_2_FaultID" Text="0"  TextColor="White"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Orientation="Horizontal">
+                            <Image Source="raker.png"
+                               x:Name="imgRaker_3"
+                               HeightRequest="110"
+                               WidthRequest="100"/>
+                            <Frame Margin="0" HeightRequest="115" WidthRequest="150" BackgroundColor="#55585B" CornerRadius="25">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="Cào rác #3" TextColor="White"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Trạng thái:" TextColor="White"/>
+                                        <Label x:Name="tbRaker_3_RunFeedback" Text="OFF" TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Mã lỗi:" TextColor="White"/>
+                                        <Label x:Name="tbRaker_3_FaultID" Text="0"  TextColor="White"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Orientation="Horizontal">
+                            <Image Source="raker.png"
+                               x:Name="imgRaker_4"
+                               HeightRequest="110"
+                               WidthRequest="100"/>
+                            <Frame Margin="0" HeightRequest="115" WidthRequest="150" BackgroundColor="#55585B" CornerRadius="25">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="Cào rác #4" TextColor="White"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Trạng thái:" TextColor="White"/>
+                                        <Label x:Name="tbRaker_4_RunFeedback" Text="OFF" TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Mã lỗi:" TextColor="White"/>
+                                        <Label x:Name="tbRaker_4_FaultID" Text="0"  TextColor="White"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="25,0,25,25" HeightRequest="150" WidthRequest="300" BackgroundColor="#3E4042">
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Orientation="Horizontal">
+                            <Image Source="conveyer.png"
+                               x:Name="imgConveyer"
+                               HeightRequest="110"
+                               WidthRequest="100"/>
+                            <Frame Margin="0" HeightRequest="115" WidthRequest="150" BackgroundColor="#55585B" CornerRadius="25">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="Băng tải" TextColor="White"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Trạng thái:" TextColor="White"/>
+                                        <Label x:Name="tbConveyer_RunFeedback" Text="OFF" TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                        <Label Text="Mã lỗi:" TextColor="White"/>
+                                        <Label x:Name="tbConveyer_FaultID" Text="0"  TextColor="White"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        
+                    </StackLayout>
+                </Frame>
+
+                <Button Text="back"
+                    Margin="150,0,150,10"
+                    CornerRadius="25"
+                    BackgroundColor="#3E4042"
+                    TextColor="White"
+                    Clicked="btBack_Clicked"/>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="XamarinClient.Chart"
+             BackgroundColor="#242526">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame Margin="25" HeightRequest="450" WidthRequest="100" BackgroundColor="#3E4042">
+                    <StackLayout>
+                        <Label Text="Nhiệt độ (oC)" TextColor="White" FontSize="15" FontAttributes="Bold"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                            <Label x:Name="tbTemperature" TextColor="White" FontSize="40" FontAttributes="Bold" VerticalOptions="End"/>
+                            <StackLayout Margin="0,22,0,0" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Start">
+                                <Image x:Name="imgTem_UpOrDown" Source="uparrow.png" HeightRequest="15" WidthRequest="15" VerticalOptions="Center"/>
+                                <Label x:Name="tbTem_Gap" Text="1.2" TextColor="#7CBB34" Font="12" VerticalOptions="Center"/>
+                                <Label x:Name="tbTem_GapPercentage" Text="(1.2%)" TextColor="#7CBB34" Font="12" VerticalOptions="Center"/>
+                            </StackLayout>
+
+                        </StackLayout>
+
+                        <Label x:Name="tbTem_DateTime" TextColor="#515151" FontSize="15"/>
+                        <chart:ChartView x:Name="Tem_GaugeChart" HeightRequest="150"/>
+                        <chart:ChartView x:Name="Tem_Chart" HeightRequest="150"/>
+                    </StackLayout>
+
+                </Frame>
+                
+                <Frame Margin="25,0,25,25" HeightRequest="450" WidthRequest="100" BackgroundColor="#3E4042">
+                    <StackLayout>
+                        <Label Text="Độ ẩm (%RH)" TextColor="White" FontSize="15" FontAttributes="Bold"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                            <Label x:Name="tbHumidity" TextColor="White" FontSize="40" FontAttributes="Bold" VerticalOptions="End"/>
+                            <StackLayout Margin="0,22,0,0" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Start">
+                                <Image x:Name="imgHumidity_UpOrDown" Source="uparrow.png" HeightRequest="15" WidthRequest="15" VerticalOptions="Center"/>
+                                <Label x:Name="tbHumidity_Gap" Text="1.2" TextColor="#7CBB34" Font="12" VerticalOptions="Center"/>
+                                <Label x:Name="tbHumidity_GapPercentage" Text="(1.2%)" TextColor="#7CBB34" Font="12" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Label x:Name="tbHumidity_DateTime" TextColor="#515151" FontSize="15"/>
+                        <chart:ChartView x:Name="Humidity_GaugeChart" HeightRequest="150"/>
+                        <chart:ChartView x:Name="Humidity_Chart" HeightRequest="150"/>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame Margin="25,0,25,25" HeightRequest="450" WidthRequest="100" BackgroundColor="#3E4042">
+                    <StackLayout>
+                        <Label Text="Mực nước bể hút (m)" TextColor="White" FontSize="15" FontAttributes="Bold"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                            <Label x:Name="tbLevelInSuctionTank" Text="80.0" TextColor="White" FontSize="40" FontAttributes="Bold" VerticalOptions="End"/>
+                            <StackLayout Margin="0,22,0,0" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Start">
+                                <Image x:Name="imgLevelInSuctionTank_UpOrDown" Source="uparrow.png" HeightRequest="15" WidthRequest="15" VerticalOptions="Center"/>
+                                <Label x:Name="tbLevelInSuctionTank_Gap" Text="1.2" TextColor="#7CBB34" Font="12" VerticalOptions="Center"/>
+                                <Label x:Name="tbGapLevelInSuctionTank" Text="(1.2%)" TextColor="#7CBB34" Font="12" VerticalOptions="Center"/>
+                            </StackLayout>
+
+                        </StackLayout>
+                        <Label x:Name="tbLevelInSuctionTank_DateTime" TextColor="#515151" FontSize="15"/>
+                        <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <chart:ChartView x:Name="LevelInSuctionTankChart" HeightRequest="400" WidthRequest="0" HorizontalOptions="StartAndExpand"/>
+                        </ScrollView>
+                    </StackLayout>
+                </Frame>
+                <Button Text="back"
+                    Margin="150,0,150,10"
+                    CornerRadius="25"
+                    BackgroundColor="#3E4042"
+                    TextColor="White"
+                    Clicked="btBack_Clicked"/>
+            </StackLayout>
+            
+        </ScrollView>
+        
+
+    </ContentPage.Content>
+</ContentPage>

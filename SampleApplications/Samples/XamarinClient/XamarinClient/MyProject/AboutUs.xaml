@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClient.AboutUs"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame HeightRequest="220" WidthRequest="300" BackgroundColor="#474E5D">
+                <StackLayout Orientation="Vertical" VerticalOptions="Start">
+                    <Label Text="About Us"
+                           FontAttributes="Bold"
+                           FontSize="35"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="This app is developed by using Xamarin.Forms which is an open-source UI framework. Xamarin.Forms allows developers to build Android, iOS, and Windows applications from a single shared codebase."
+                           Margin="0,00,0,0"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center"
+                           FontSize="18"/>
+                    <Image Source="xamarin.png"
+                           WidthRequest="100"
+                           HeightRequest="100"
+                           Margin="0,-20,0,0"/>
+                </StackLayout>
+            </Frame>
+            <Label Text="Our Team"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   FontSize="25"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10,0,10"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Frame Margin="0,0,0,0" HeightRequest="220" WidthRequest="150" BackgroundColor="White" BorderColor="#F1F1F1">
+                    <StackLayout Orientation="Vertical" VerticalOptions="Start">
+                        <Image Source="duy.jpg" ScaleX="1.9" ScaleY="1.3" Margin="0,-20,0,20" HeightRequest="100" WidthRequest="150"/>
+                        <Label Text="Duy Tran"
+                               TextColor="Black"
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                HorizontalTextAlignment="Start"
+                               Margin="-13,0,0,0"/>
+                        <Label Text="Developer"
+                               TextColor="#908080"
+                                FontSize="15"
+                                HorizontalTextAlignment="Start"
+                               Margin="-13,0,0,0"/>
+                        <Label Text="Senior student at HCM University of Technology"
+                               TextColor="Black"
+                                FontSize="15"
+                                HorizontalTextAlignment="Start"
+                               Margin="-13,0,0,0"/>
+                        <Label Text="minhduy@gmail.com"
+                               TextColor="Black"
+                                FontSize="15"
+                                HorizontalTextAlignment="Start"
+                               Margin="-13,0,0,0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="0,0,0,0" HeightRequest="220" WidthRequest="150" BackgroundColor="White" BorderColor="#F1F1F1">
+                    <StackLayout Orientation="Vertical" VerticalOptions="Start">
+                        <Image Source="huy.jpg" ScaleX="1.9" ScaleY="1.3" Margin="0,-20,0,20" HeightRequest="100" WidthRequest="150"/>
+                        <Label Text="Trong Huy"
+                               TextColor="Black"
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                HorizontalTextAlignment="Start"
+                               Margin="-13,0,0,0"/>
+                        <Label Text="Partner"
+                               TextColor="#908080"
+                                FontSize="15"
+                                HorizontalTextAlignment="Start"
+                               Margin="-13,0,0,0"/>
+                        <Label Text="Senior student at HCM University of Technology"
+                               TextColor="Black"
+                                FontSize="15"
+                                HorizontalTextAlignment="Start"
+                               Margin="-13,0,0,0"/>
+                        <Label Text="huytrong@gmail.com"
+                               TextColor="Black"
+                                FontSize="15"
+                                HorizontalTextAlignment="Start"
+                               Margin="-13,0,0,0"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <Button Text="back"
+                    Margin="150,0,150,10"
+                    CornerRadius="25"
+                    BackgroundColor="#474E5D"
+                    TextColor="White"
+                    Clicked="btBack_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

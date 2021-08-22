@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ExportToExcel">
+  <DataContextMoniker Name="/ExportToExcelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="733313d3-6610-4c96-ae55-c6c8bb1747d4" absoluteBounds="3.5, 0.5, 4.125, 7.3476383463541657">
+      <DataClassMoniker Name="/ExportToExcelDataContext/DAILY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="007347bf-1883-4b3d-985b-25253f94f1a7" absoluteBounds="3.515, 0.96, 4.0950000000000006, 6.7876383463541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

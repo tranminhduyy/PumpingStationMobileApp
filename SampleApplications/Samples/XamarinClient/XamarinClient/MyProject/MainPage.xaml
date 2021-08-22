@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClient.MainPage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Image Margin="50,120,50,120" Source="OpcUa.png" HorizontalOptions="Center"/>
+                <StackLayout Orientation="Horizontal">
+                    <Frame HeightRequest="130" 
+                           WidthRequest="60" 
+                           BackgroundColor="#D5658B"
+                           HasShadow="True"
+                           HorizontalOptions="FillAndExpand"
+                           Margin="10,0,0,0">
+                        <StackLayout Orientation="Vertical">
+                            <ImageButton Source="station.png"
+                                         BackgroundColor="Transparent"
+                                         HeightRequest="70"
+                                         Margin="0,15,0,0"
+                                         Clicked="OnStationClicked"/>
+                            <Label Text="Pump Station" 
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="White"
+                                   FontAttributes="Bold"
+                                   FontSize="16"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="130" 
+                           WidthRequest="60" 
+                           BackgroundColor="#8ABDFF"
+                           HasShadow="True"                        
+                           HorizontalOptions="FillAndExpand"
+                           Margin="0,0,10,0">
+                        <StackLayout Orientation="Vertical">
+                            <ImageButton Source="chart.png"
+                                         BackgroundColor="Transparent"
+                                         HeightRequest="70"
+                                         Margin="0,15,0,0"
+                                         Clicked="OnChartClicked"/>
+                            <Label Text="Chart" 
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="White"
+                                   FontAttributes="Bold"
+                                   FontSize="16"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Frame HeightRequest="130" 
+                           WidthRequest="60" 
+                           BackgroundColor="#A0BD2D"
+                           HasShadow="True"
+                           HorizontalOptions="FillAndExpand"
+                           Margin="10,0,0,0">
+                        <StackLayout Orientation="Vertical">
+                            <ImageButton Source="monitoring.png"
+                                         BackgroundColor="Transparent"
+                                         HeightRequest="70"
+                                         Margin="0,15,0,0"
+                                         Clicked="OnScadaClicked"/>
+                            <Label Text="Monitoring" 
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="White"
+                                   FontAttributes="Bold"
+                                   FontSize="16"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="130" 
+                           WidthRequest="60" 
+                           BackgroundColor="#F4721E"
+                           HasShadow="True"                        
+                           HorizontalOptions="FillAndExpand"
+                           Margin="0,0,10,0">
+                        <StackLayout Orientation="Vertical">
+                            <ImageButton Source="us.png"
+                                         BackgroundColor="Transparent"
+                                         HeightRequest="70"
+                                         Margin="0,15,0,0"
+                                         Clicked="OnAboutUsClicked"/>
+                            <Label Text="About Us" 
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="White"
+                                   FontAttributes="Bold"
+                                   FontSize="16"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

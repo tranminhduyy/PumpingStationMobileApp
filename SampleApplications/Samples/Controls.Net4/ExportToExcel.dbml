@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PumpStation" Class="ExportToExcelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TTBTECH;Initial Catalog=PumpStation;Integrated Security=True" SettingsObjectName="Opc.Ua.Sample.Properties.Settings" SettingsPropertyName="PumpStationConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DAILY" Member="DAILies">
+    <Type Name="DAILY">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TIME" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="PUMP_1_RUNFEEDBACK" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="PUMP_1_FAULTID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PUMP_2_RUNFEEDBACK" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="PUMP_2_FAULTID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PUMP_3_RUNFEEDBACK" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="PUMP_3_FAULTID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PUMP_4_RUNFEEDBACK" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="PUMP_4_FAULTID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RAKER_1_RUNFEEDBACK" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="RAKER_1_FAULTID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RAKER_2_RUNFEEDBACK" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="RAKER_2_FAULTID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RAKER_3_RUNFEEDBACK" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="RAKER_3_FAULTID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RAKER_4_RUNFEEDBACK" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="RAKER_4_FAULTID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CONVEYER_RUNFEEDBACK" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="CONVEYER_FAULTID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GLOBALMODE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TEMPERATURE" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HUMIDITY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LEVELINSUCTIONTANK_FILTERED" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EMPTYSUCTIONTANK" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="ABOVE_LEVEL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BOTTOM_LEVEL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TIMELIMIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MASTERCHANGEFREQUENCY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RAKERRUNDELAY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PUMPRUNDELAY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CONVEYERSTOPDELAY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RAKERSTOPDELAY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClient.Station"
+             BackgroundColor="#242526">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Pump Station"
+                   FontAttributes="Bold"
+                   FontSize="35"
+                   TextColor="White"
+                   Margin="10,10,0,0"/>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" 
+                           WidthRequest="50" 
+                           BackgroundColor="#C0A2FB"
+                           HasShadow="True"
+                           Margin="10,10,0,0">
+                            <ImageButton Source="pump.png"
+                                     HeightRequest="100"
+                                     BackgroundColor="Transparent"
+                                     Clicked="btPump_1_Clicked"/>
+                        </Frame>
+                        <Frame HeightRequest="50" 
+                           WidthRequest="260" 
+                           BackgroundColor="#3E4042"
+                           HasShadow="True"
+                           Margin="0,10,10,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Pump 1" 
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" 
+                           WidthRequest="50" 
+                           BackgroundColor="#A6DF63"
+                           HasShadow="True"
+                           Margin="10,0,0,0">
+                            <ImageButton Source="pump.png"
+                                     HeightRequest="100"
+                                     BackgroundColor="Transparent"
+                                     Clicked="btPump_2_Clicked"/>
+                        </Frame>
+                        <Frame HeightRequest="50" 
+                           WidthRequest="260" 
+                           BackgroundColor="#3E4042"
+                           HasShadow="True"
+                           Margin="0,0,10,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Pump 2" 
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" 
+                           WidthRequest="50" 
+                           BackgroundColor="#F89A45"
+                           HasShadow="True"
+                           Margin="10,0,0,0">
+                            <ImageButton Source="pump.png"
+                                     HeightRequest="100"
+                                     BackgroundColor="Transparent"
+                                     Clicked="btPump_3_Clicked"/>
+                        </Frame>
+                        <Frame HeightRequest="50" 
+                           WidthRequest="260" 
+                           BackgroundColor="#3E4042"
+                           HasShadow="True"
+                           Margin="0,0,10,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Pump 3" 
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" 
+                           WidthRequest="50" 
+                           BackgroundColor="#C0A2FB"
+                           HasShadow="True"
+                           Margin="10,0,0,0">
+                            <ImageButton Source="pump.png"
+                                     HeightRequest="100"
+                                     BackgroundColor="Transparent"
+                                     Clicked="btPump_4_Clicked"/>
+                        </Frame>
+                        <Frame HeightRequest="50" 
+                           WidthRequest="260" 
+                           BackgroundColor="#3E4042"
+                           HasShadow="True"
+                           Margin="0,0,10,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Pump 4" 
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" 
+                           WidthRequest="50" 
+                           BackgroundColor="#A6DF63"
+                           HasShadow="True"
+                           Margin="10,0,0,0">
+                            <ImageButton Source="raker.png"
+                                     HeightRequest="100"
+                                     BackgroundColor="Transparent"
+                                     Clicked="btRaker_1_Clicked"/>
+                        </Frame>
+                        <Frame HeightRequest="50" 
+                           WidthRequest="260" 
+                           BackgroundColor="#3E4042"
+                           HasShadow="True"
+                           Margin="0,0,10,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Raker 1" 
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" 
+                           WidthRequest="50" 
+                           BackgroundColor="#F89A45"
+                           HasShadow="True"
+                           Margin="10,0,0,0">
+                            <ImageButton Source="raker.png"
+                                     HeightRequest="100"
+                                     BackgroundColor="Transparent"
+                                     Clicked="btRaker_2_Clicked"/>
+                        </Frame>
+                        <Frame HeightRequest="50" 
+                           WidthRequest="260" 
+                           BackgroundColor="#3E4042"
+                           HasShadow="True"
+                           Margin="0,0,10,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Raker 2" 
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" 
+                           WidthRequest="50" 
+                           BackgroundColor="#C0A2FB"
+                           HasShadow="True"
+                           Margin="10,0,0,0">
+                            <ImageButton Source="raker.png"
+                                     HeightRequest="100"
+                                     BackgroundColor="Transparent"
+                                     Clicked="btRaker_3_Clicked"/>
+                        </Frame>
+                        <Frame HeightRequest="50" 
+                           WidthRequest="260" 
+                           BackgroundColor="#3E4042"
+                           HasShadow="True"
+                           Margin="0,0,10,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Raker 3" 
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" 
+                           WidthRequest="50" 
+                           BackgroundColor="#A6DF63"
+                           HasShadow="True"
+                           Margin="10,0,0,0">
+                            <ImageButton Source="raker.png"
+                                     HeightRequest="100"
+                                     BackgroundColor="Transparent"
+                                     Clicked="btRaker_4_Clicked"/>
+                        </Frame>
+                        <Frame HeightRequest="50" 
+                           WidthRequest="260" 
+                           BackgroundColor="#3E4042"
+                           HasShadow="True"
+                           Margin="0,0,10,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Raker 4" 
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" 
+                           WidthRequest="50" 
+                           BackgroundColor="#F89A45"
+                           HasShadow="True"
+                           Margin="10,0,0,0">
+                            <ImageButton Source="conveyer.png"
+                                     HeightRequest="100"
+                                     BackgroundColor="Transparent"
+                                     Clicked="btConveyer_Clicked"/>
+                        </Frame>
+                        <Frame HeightRequest="50" 
+                           WidthRequest="260" 
+                           BackgroundColor="#3E4042"
+                           HasShadow="True"
+                           Margin="0,0,10,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Conveyer" 
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" 
+                           WidthRequest="50" 
+                           BackgroundColor="#C0A2FB"
+                           HasShadow="True"
+                           Margin="10,0,0,0">
+                            <ImageButton Source="general.png"
+                                     HeightRequest="100"
+                                     BackgroundColor="Transparent"
+                                     Clicked="btGeneral_Clicked"/>
+                        </Frame>
+                        <Frame HeightRequest="50" 
+                           WidthRequest="260" 
+                           BackgroundColor="#3E4042"
+                           HasShadow="True"
+                           Margin="0,0,10,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="General" 
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <Button Text="back"
+                    Margin="150,0,150,10"
+                    CornerRadius="25"
+                    BackgroundColor="#3E4042"
+                    TextColor="White"
+                    Clicked="OnBackClicked"/>
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

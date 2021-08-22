@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClient.Page_Pump"
+             BackgroundColor="#242526">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Padding="4" Margin="10,10,10,10" HasShadow="True" BackgroundColor="#6963CF" HorizontalOptions="FillAndExpand" HeightRequest="40">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <ImageButton Source="back.png" Clicked="btBack_Clicked" BackgroundColor="Transparent"/>
+                    <Label Text="Bơm" TextColor="White" FontAttributes="Bold" FontSize="24" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                    <Label x:Name="tbNumber" TextColor="White" FontAttributes="Bold" FontSize="24" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="10,6,10,6" HeightRequest="40" Margin="10,0,10,5" HasShadow="True" BackgroundColor="#3E4042" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Label Text="Chế độ điều khiển" TextColor="White" FontSize="15" FontAttributes="Bold"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center">
+                    </Label>
+                    <Frame Padding="2" HasShadow="True" WidthRequest="70" BackgroundColor="#6963CF" Margin="133,0,0,0">
+                        <Label x:Name="tbMode" Text="Manual" TextColor="White" FontSize="15" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="10,6,10,6" Margin="10,0,10,5" HasShadow="True" 
+                   BackgroundColor="#3E4042" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <Button x:Name="btStart" Text="start" FontSize="10" FontAttributes="Bold" BackgroundColor="#74B733" VerticalOptions="CenterAndExpand" WidthRequest="55" HeightRequest="55" TextColor="White"
+                                    Pressed="btStart_Pressed"
+                                    Released="btStart_Released"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <Button x:Name="btStop" Text="stop" FontSize="10" FontAttributes="Bold" BackgroundColor="#E51E20" VerticalOptions="CenterAndExpand" WidthRequest="55" HeightRequest="55" TextColor="White"
+                                    Pressed="btStop_Pressed"
+                                    Released="btStop_Released"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <Button x:Name="btReset" Text="reset" FontSize="10" FontAttributes="Bold" BackgroundColor="#E51E20" VerticalOptions="CenterAndExpand" WidthRequest="55" HeightRequest="55" TextColor="White"
+                                    Pressed="btReset_Pressed"
+                                    Released="btReset_Released"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="10,6,10,6" Margin="10,0,10,5" HasShadow="True" BackgroundColor="#3E4042" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Label Text="Trạng thái" FontAttributes="Bold" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Margin="0,0,10,0"/>
+                    <Image x:Name="imgRunFeedback" Source="ledoff.png" Margin="204,0,0,0" HeightRequest="23"/>
+                </StackLayout>
+            </Frame>
+
+
+
+
+            <Frame Padding="10,6,10,6" Margin="10,0,10,0" HasShadow="True" BackgroundColor="#3E4042" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Label Text="Lỗi" FontAttributes="Bold" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                        <Image x:Name="imgFault" Source="ledoff.png" HeightRequest="23" Margin="261,0,0,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Label Text="Mã lỗi" FontAttributes="Bold" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" Margin="214,0,0,0">
+                            <Frame Padding="2" HasShadow="True" WidthRequest="70" HorizontalOptions="CenterAndExpand" BackgroundColor="#6963CF">
+                                <Label x:Name="tbFaultID" Text="0" TextColor="White" FontSize="15" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                            </Frame>
+
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
